@@ -1,0 +1,362 @@
+/* Estilos para el encabezado */
+header {
+    position: fixed; /* Hace que el encabezado se mantenga fijo */
+    top: 0; /* Lo posiciona en la parte superior de la página */
+    left: 0; /* Lo posiciona en el borde izquierdo */
+    width: 100%; /* Establece el ancho completo */
+    z-index: 1000; /* Asegura que esté por encima de otros elementos */
+    background-color: transparent; /* Color de fondo del encabezado */
+}
+/* Estilos para la barra de navegación */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px; /* Ajusta el relleno vertical y horizontal */
+}
+/*Boton agregar*/
+.producto button {
+    background-color: yellow; /* Amarillo */
+    color: #000; /* Negro */
+    border: none;
+    padding: 10px 70px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.corner-heading {
+    position: absolute;
+    top: 190px; /* Ajustar según sea necesario */
+    left: 90px; /* Mover a la izquierda */
+}
+
+.small-heading {
+    font-size: 1em; /* Adjust the font size as needed */
+}
+
+
+button:hover {
+    background-color: #ffff99; /* Amarillo claro al pasar el ratón */
+}
+
+/* Estilos para el logo */
+.logo img {
+    width: 180px; /* Define el ancho deseado */
+    height: auto; /* Mantiene la proporción de la imagen */
+}
+
+
+/* Estilos para el encabezado */
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: yellow; /*Boton agregar*/
+    z-index: 1000;
+}
+
+/* Estilo para ajustar el contenido después del encabezado fijo */
+main {
+    margin-top: 60px; /* Ajusta el espacio según el alto del encabezado */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+nav ul li {
+    margin-right: 20px;
+    display: flex; /* Hace que los elementos sean flexibles */
+    flex-direction: column; /* Cambia la dirección del flujo a vertical */
+    align-items: center; /* Centra los elementos horizontalmente */
+    text-align: center; /* Centra el texto */
+}
+
+nav ul li img {
+    margin-bottom: 5px; /* Espacio entre la imagen y el texto */
+    width: 25px; /* Define el ancho deseado */
+    height: auto; /* Mantiene la proporción de la imagen */
+    margin-right: 5px; /* Espacio entre la imagen y el texto "Carrito" */
+}
+
+/*Inicio, Carrito*/
+nav ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+/* Estilos para el área de búsqueda */
+.search {
+    display: flex;
+    align-items: center;
+}
+
+.search input[type="text"] {
+    padding: 8px;
+    border-radius: 5px;
+    border: none;
+}
+
+.search-icon {
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+#ordenamiento1 {
+    position: absolute;
+    top: 300px; /* Ajusta la posición vertical hacia arriba */
+    left:  80px; /* Mueve el elemento hacia la derecha */
+    display: inline-flex; /* Establece el diseño en línea */
+    top: 200px; /* Puedes ajustar la posición vertical según sea necesario */
+     margin-right: 50px; /* Ajusta el margen derecho según sea necesario */
+    margin-top: 120px; /* Ajusta el margen superior según sea necesario */
+}
+
+
+/* Estilos para el label */
+#ordenamiento1 label {
+    margin-right: 30px;
+    font-size: 16px;
+    color: #333;
+    cursor: pointer; /* Hace que el cursor cambie al pasar por encima */
+    transition: color 0.3s ease; /* Agrega una transición suave al cambio de color */
+    display: inline-flex; /* Establece el diseño en línea */
+    align-items: center; /* Centra verticalmente los elementos */
+
+}
+
+#ordenamiento select {
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+    color: #333;
+    cursor: pointer;
+    transition: border-color 0.3s ease;
+    width: 150px; /* Ajusta el ancho del elemento select según sea necesario */
+}
+
+
+/* Cambia el color del texto al pasar el mouse */
+#ordenamiento1 label:hover {
+    color: #ffff00;
+}
+
+/* Cambia el borde del select al pasar el mouse */
+#ordenamiento1 select:hover {
+    border-color: #666;
+}
+
+/* Estilos cuando el select está enfocado */
+#ordenamiento1 select:focus {
+    outline: none;
+    border-color: #666;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+}
+
+#como-recibir-pedido {
+    margin-bottom: 0px; /* Agrega espacio inferior */
+}
+/* Estilos para la sección de productos */
+#productos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end; /* Alinea los productos a la derecha */
+    padding: 20px;
+    margin-top: -500px; /* Ajusta el margen superior */
+}
+
+
+.producto {
+    margin: 10px;
+    text-align: center;
+    border: 1px solid #ccc; /* Añadir borde */
+    border-radius: 10px; /* Añadir bordes redondeados */
+    padding: 20px; /* Añadir espacio interno */
+    width: 250px; /* Ajustar el ancho del cuadro */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Añadir sombra */
+}
+
+.descuento {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: red;
+    color: white;
+    padding: 5px;
+    border-radius: 50%; /* Aplica la forma de círculo */
+}
+
+/*Precio Online este en rojo*/
+.precio-online {
+    color: red; /* Cambia el color del texto a rojo */
+}
+
+.productos-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 20px;
+    justify-content: flex-end; /* Cambiado de center a flex-end */
+}
+
+.producto img {
+    width: 120px;
+    height: 120px;
+    border-radius: 10px;
+}
+
+.producto strong.precio-online {
+    color: red; /* Cambia el color del texto a rojo */
+}
+
+.producto p {
+    margin-top: 10px;
+    font-size: 18px;
+    color: #333; /* Cambiar color del texto */
+}
+
+.producto del {
+    color: #999; /* Cambiar color del precio anterior */
+}
+
+.producto {
+    margin: 10px;
+    text-align: center;
+    position: relative;
+}
+
+
+.descuento {
+    position: absolute;
+    top: 40px;
+    right: auto;
+    left: 10px; /* Establecemos la posición desde la izquierda */
+    background-color: red;
+    color: white;
+    padding: 8px; /* Reducir el padding para hacer el círculo más pequeño */
+    font-size: 12px; /* Reducir el tamaño de la fuente para hacer el círculo más pequeño */
+    border-radius: 50%;
+    transform: translate(50%, -50%); /* Centra el círculo */
+}
+.categorias {
+    position: fixed;
+    top: 210px;
+    left: 30px;
+    width: 200px; /* Ancho deseado */
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+.categorias h2 {
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.categorias ul {
+    list-style: none;
+    padding: 0;
+}
+
+.categorias ul li {
+    margin-bottom: 10px;
+}
+
+.categorias ul li a {
+    text-decoration: none;
+    color: #666;
+    font-size: 1rem;
+    transition: color 0.3s ease; /* Transición suave */
+}
+
+.categorias ul li a:hover {
+    color: #000;
+}
+/* Estilos para el carrito */
+#carrito {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+
+/* Estilos para el panel lateral */
+#panel-carrito {
+    position: fixed;
+    top: 0;
+    right: -300px; /* Inicialmente oculto */
+    width: 300px;
+    height: 100%;
+    background-color: #f9f9f9;
+    border-left: 1px solid #ddd;
+    padding: 20px;
+    transition: right 0.3s ease;
+}
+
+.img-item {
+
+}
+.producto {
+    border: 1px solid #ccc;
+    padding: 15px;
+    margin: 15px;
+    text-align: center;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+.producto img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.producto .descuento {
+    position: absolute;
+    background-color: red;
+    color: white;
+    padding: 5px;
+    top: 10px;
+    left: 10px;
+    border-radius: 4px;
+}
+
+.producto p {
+    margin: 10px 0;
+}
+
+.producto .precio-online {
+    color: green;
+    font-weight: bold;
+}
+
+.producto button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 5px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.producto .btn-detalle {
+    background-color: #007BFF;
+    color: white;
+}
+
+.producto .btn-detalle:hover {
+    background-color: #0056b3;
+}
+
+.producto .btn-agregar {
+    background-color: #28a745;
+    color: white;
+}
+
+.producto .btn-agregar:hover {
+    background-color: #218838;
+}

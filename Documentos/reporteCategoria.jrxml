@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.21.3.final using JasperReports Library version 6.21.3-4a3078d20785ebe464f18037d738d12fc98c13cf  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="CategoriaReport" language="groovy" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="249719ca-768d-4923-bc26-7006e906a61b">
+	<field name="idCategoria" class="java.lang.Integer"/>
+	<field name="nombreCategoria" class="java.lang.String"/>
+	<field name="descripcion" class="java.lang.String"/>
+	<field name="cantidadProductos" class="java.lang.Integer"/>
+	<field name="precioPromedio" class="java.lang.Double"/>
+	<field name="popularidad" class="java.lang.String"/>
+	<columnHeader>
+		<band height="20">
+			<staticText>
+				<reportElement x="20" y="0" width="50" height="20" uuid="41d24cfe-47ce-4403-bbb9-d18ffcda7588"/>
+				<box>
+					<pen lineWidth="2.0" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Center">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ID]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="70" y="0" width="170" height="20" uuid="b5fc5918-b8e4-48ee-b417-8c0e412be12e"/>
+				<box>
+					<pen lineWidth="2.0" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Center">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Nombre Categoria]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="240" y="0" width="350" height="20" uuid="84377c5c-e49a-405b-b564-a2d7579a31ce"/>
+				<box>
+					<pen lineWidth="2.0" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Center">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Descripcion]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="590" y="0" width="70" height="20" uuid="cd0bfcd6-1d5c-4a5d-bc8d-66a9c8d02629"/>
+				<box>
+					<pen lineWidth="2.0" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Center">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Numero Productos]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="660" y="0" width="70" height="20" uuid="6d7b4974-ac70-4703-a0cf-e804740034cc"/>
+				<box>
+					<pen lineWidth="2.0" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Center">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Precio Promedio]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="730" y="0" width="70" height="20" uuid="058cb127-6cd6-4d6f-9244-0acfec2c0030"/>
+				<box>
+					<pen lineWidth="2.0" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Center">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Popularidad]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="20">
+			<textField>
+				<reportElement x="20" y="0" width="50" height="20" backcolor="#FFFFFF" uuid="08f96c65-dea5-4c1a-8f4a-bb64982b1b76"/>
+				<box>
+					<pen lineWidth="2.0" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{idCategoria}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="70" y="0" width="170" height="20" backcolor="#FFFFFF" uuid="532e64ce-7a88-4e56-bc44-70a81002d74a"/>
+				<box>
+					<pen lineWidth="2.0" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{nombreCategoria}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="240" y="0" width="350" height="20" backcolor="#FFFFFF" uuid="bf879319-0517-4e05-8d05-dd1153f0a3c7"/>
+				<box>
+					<pen lineWidth="2.0" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{descripcion}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="590" y="0" width="70" height="20" backcolor="#FFFFFF" uuid="8447b73e-c1f9-4552-bf71-f9f2b80db111"/>
+				<box>
+					<pen lineWidth="2.0" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{cantidadProductos}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="660" y="0" width="70" height="20" backcolor="#FFFFFF" uuid="bca9f3b4-d8c6-4947-954e-16885a4e0986"/>
+				<box>
+					<pen lineWidth="2.0" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{precioPromedio}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="730" y="0" width="70" height="20" backcolor="#FFFFFF" uuid="9f58683b-d95f-4c50-a3d0-9fb42a292f9e"/>
+				<box>
+					<pen lineWidth="2.0" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{popularidad}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+</jasperReport>
